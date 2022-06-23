@@ -28,5 +28,12 @@ endif
 
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 "--------------
-" load lua configurations
+" load plugins configurations
+runtime configs/coc-config.vim
 runtime configs/which-key-config.vim
+runtime configs/comment-config.vim
+runtime configs/gitsigns-config.vim
+runtime configs/colorizer-config.vim
+runtime configs/lazygit-config.vim
+runtime configs/neoformat-config.vim
+
