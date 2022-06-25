@@ -47,7 +47,6 @@ inoremap <C-k> <Up>
 nnoremap , 0
 nnoremap . $
 nmap dl <ESC>yyp
-nnoremap <C-/> :source $MYVIMRC<CR>
 map <C-S> <ESC>:w<CR>
 nmap <C-w> <ESC>:bd<CR>
 inoremap <A-Up> <ESC>:move -2<CR>i
