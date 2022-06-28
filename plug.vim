@@ -1,7 +1,7 @@
 call plug#begin()
 " Or build from source code by using yarn: https://yarnpkg.com
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-Plug 'overcache/NeoSolarized'
+Plug 'lifepillar/vim-solarized8'
 Plug 'xiyaowong/nvim-transparent'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

@@ -6,7 +6,8 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 syntax on
 set termguicolors
 set background=dark
-colorscheme NeoSolarized
+set mouse=a
+colorscheme solarized8
 let g:transparent_enabled = v:true
 let g:airline_powerline_fonts = 1
 let g:airline_solarized_bg='dark'

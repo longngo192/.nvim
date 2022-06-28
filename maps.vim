@@ -55,6 +55,7 @@ nnoremap <A-Up> <ESC>:move -2<CR>
 nnoremap <A-Down> <ESC>:move +1<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
 nnoremap <C-,> :Prettier<CR>
+nnoremap <C-_> :source $MYVIMRC<CR>
 "------------------
 " Telescope
 " Find files using Telescope command-line sugar.
