@@ -4,6 +4,7 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 syntax on
+filetype plugin indent on
 set termguicolors
 set background=dark
 set mouse=a
@@ -25,16 +26,20 @@ if has('win32')
 	runtime configs/windows.vim
 endif
 
+highlight link LspSagaFinderSelection Search
 
-
-command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 "--------------
 " load plugins configurations
-runtime configs/coc-config.vim
+runtime configs/lsp/lsp-config.vim
+runtime configs/cmp/cmp-setup.vim
+source ~/.config/nvim/configs/lsp-saga.lua
+source ~/.config/nvim/configs/null-ls-config.lua
 runtime configs/which-key-config.vim
 runtime configs/comment-config.vim
 runtime configs/gitsigns-config.vim
 runtime configs/colorizer-config.vim
 runtime configs/lazygit-config.vim
-runtime configs/neoformat-config.vim
+runtime configs/syntastics-confifg.vim
+runtime configs/rustfmt-confifg.vim
+" runtime configs/neoformat-config.vim
 

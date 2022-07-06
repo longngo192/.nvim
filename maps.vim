@@ -55,7 +55,7 @@ nnoremap <A-Up> <ESC>:move -2<CR>
 nnoremap <A-Down> <ESC>:move +1<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
 nnoremap <C-,> :Prettier<CR>
-nnoremap <C-_> :source $MYVIMRC<CR>
+nnoremap <C-\> :source $MYVIMRC<CR>
 "------------------
 " Telescope
 " Find files using Telescope command-line sugar.
@@ -66,5 +66,10 @@ nnoremap <leader>h <cmd>Telescope help_tags<cr>
 "-----------------
 
 " Use K to show documentation in preview window.
-nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <silent> K <cmd>Lspsaga hover_doc<CR>
+nnoremap <silent> F <cmd>Lspsaga lsp_finder<CR>
+nnoremap <silent> L <cmd>Lspsaga show_line_diagnostics<CR>
+nnoremap <silent> T <cmd>Lspsaga signature_help<CR>
+nnoremap <silent> gr <cmd>Lspsaga rename<CR>
+nnoremap <silent> gd <cmd>Lspsaga preview_definition<CR>
 

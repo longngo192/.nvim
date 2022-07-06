@@ -18,17 +18,12 @@ wk.setup {
   }
 }
 
-local Terminal = require('toggleterm.terminal').Terminal
-local toggle_float = function()
-  local float = Terminal:new({ direction = "float" })
-  return float:toggle()
-end
 local toggle_lazygit = function()
   local lazygit = Terminal:new({ cmd = 'lazygit', direction = "float" })
   return lazygit:toggle()
 end
 
-local mappings = {c = {name = "coc"}, g = {name="git"}, t ={
+local mappings = { g = {name="git"}, t ={
 "<CMD>vim source $MYVIMRC<CR>","reload vim"
   }
 }

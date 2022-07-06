@@ -1,6 +1,19 @@
 call plug#begin()
 " Or build from source code by using yarn: https://yarnpkg.com
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/nvim-lsp-installer'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+" For vsnip users.
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+Plug 'rust-lang/rust.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'preservim/tagbar'
 Plug 'lifepillar/vim-solarized8'
 Plug 'xiyaowong/nvim-transparent'
 Plug 'vim-airline/vim-airline'
@@ -9,11 +22,12 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'BurntSushi/ripgrep'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'folke/which-key.nvim'
-Plug 'nvim-treesitter/nvim-treesitter' 
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'numToStr/Comment.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'easymotion/vim-easymotion'
 Plug 'sbdchd/neoformat'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 call plug#end()
